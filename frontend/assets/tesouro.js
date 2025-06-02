@@ -1,5 +1,6 @@
 // Atualizar a URL da API para apontar para o servidor real
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://project-login-securit-demo.onrender.com/api';
+
 
 // Elementos DOM
 const userNameElement = document.getElementById('user-name');
