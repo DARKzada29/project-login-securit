@@ -298,3 +298,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setupFormEvents();
     checkAuth();
 });
+app.use(cors({
+    origin: 'https://seu-frontend.netlify.app',
+    credentials: true
+  } ));
+  
