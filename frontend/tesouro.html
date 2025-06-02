@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesouro Tecnológico</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="tesouro-page">
+    <div class="particles-container" id="particles"></div>
+    
+    <div class="tesouro-container">
+        <div class="user-info">
+            <span id="user-name">Usuário</span>
+            <button id="logout-btn" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Sair
+            </button>
+        </div>
+        
+        <div class="tesouro-content">
+            <h1 class="tesouro-title">Parabéns, você desbloqueou o Tesouro!</h1>
+            
+            <div class="tesouro-chest-container">
+                <div class="tesouro-chest" id="tesouro-chest">
+                    <!-- O baú será animado via CSS e JS -->
+                    <div class="chest-top"></div>
+                    <div class="chest-bottom"></div>
+                    <div class="chest-glow"></div>
+                    <div class="chest-particles"></div>
+                </div>
+            </div>
+            
+            <div class="tesouro-message">
+                <p>Você completou o desafio de autenticação com sucesso!</p>
+                <p>Este tesouro representa seu acesso a conteúdo exclusivo e protegido.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/tesouro.js"></script>
+</body>
+</html>

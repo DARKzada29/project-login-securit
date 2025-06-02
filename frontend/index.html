@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Tecnológico</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles-container" id="particles"></div>
+    
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <div class="logo">
+                    <i class="fas fa-microchip"></i>
+                    <span>TECH ACCESS</span>
+                </div>
+                <div class="toggle-container">
+                    <button id="login-toggle" class="toggle-btn active">Login</button>
+                    <button id="signup-toggle" class="toggle-btn">Cadastro</button>
+                </div>
+            </div>
+            
+            <div class="form-content">
+                <!-- Formulário de Login -->
+                <form id="login-form" class="active-form">
+                    <div class="form-group">
+                        <label for="login-email">
+                            <i class="fas fa-envelope"></i> Email
+                        </label>
+                        <input type="email" id="login-email" class="form-input" required>
+                        <div class="error-message" id="login-email-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password">
+                            <i class="fas fa-lock"></i> Senha
+                        </label>
+                        <input type="password" id="login-password" class="form-input" required>
+                        <div class="error-message" id="login-password-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">
+                            <span>Entrar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="form-message" id="login-message"></div>
+                </form>
+                
+                <!-- Formulário de Cadastro -->
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">
+                            <i class="fas fa-user"></i> Nome
+                        </label>
+                        <input type="text" id="signup-name" class="form-input" required>
+                        <div class="error-message" id="signup-name-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-email">
+                            <i class="fas fa-envelope"></i> Email
+                        </label>
+                        <input type="email" id="signup-email" class="form-input" required>
+                        <div class="error-message" id="signup-email-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-password">
+                            <i class="fas fa-lock"></i> Senha
+                        </label>
+                        <input type="password" id="signup-password" class="form-input" required>
+                        <div class="error-message" id="signup-password-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-confirm-password">
+                            <i class="fas fa-shield-alt"></i> Confirmar Senha
+                        </label>
+                        <input type="password" id="signup-confirm-password" class="form-input" required>
+                        <div class="error-message" id="signup-confirm-password-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">
+                            <span>Criar Conta</span>
+                            <i class="fas fa-user-plus"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="form-message" id="signup-message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
