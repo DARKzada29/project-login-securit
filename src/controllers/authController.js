@@ -28,6 +28,14 @@ exports.register = async (req, res, next) => {
       email,
       password
     });
+
+    // Enviar dados ao n8n para envio de e-mail de boas-vindas
+const axios = require('axios');
+await axios.post('https://darkzada29.app.n8n.cloud/webhook-test/86ab9686-d550-4b26-abaf-9f4c642a9ab2', {
+  nome: user.name,
+  email: user.email
+});
+
     
     // Remover senha da resposta
     user.password = undefined;
